@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Valorant Stats & Rank Checker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <button id="dark-mode-toggle">Toggle Dark Mode</button>
+
+  <section id="valorant-stats">
+    <h2>Valorant Player Stats</h2>
+    <div class="region-selector">
+      <label for="region">Region:</label>
+      <select id="region">
+        <option value="na">NA</option>
+        <option value="br">BR</option>
+        <option value="ap">AP</option>
+        <option value="eu">EU</option>
+        <option value="kr">KR</option>
+        <option value="latam">LATAM</option>
+        
+      </select>
+    </div>
+    <div class="username-input">
+      <label for="username">Username:</label>
+      <input type="text" id="username" placeholder="Enter your Valorant username">
+    </div>
+    <div class="tag-input">
+      <label for="tag">Tag:</label>
+      <input type="text" id="tag" placeholder="Enter your Valorant tag">
+    </div>
+    <button id="check-stats">Check Stats</button>
+    <div id="stats-display"></div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
