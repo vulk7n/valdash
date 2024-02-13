@@ -38,26 +38,14 @@ checkStatsButton.addEventListener('click', () => {
         const { currenttier, currenttierpatched, images, ranking_in_tier, mmr_change_to_last_game, elo } = data.data;
 
         // Build HTML content with rank, RR, MMR, and MMR change indicator
-        let mmrChangeSign = '';
-        if (mmr_change_to_last_game > 0) {
-        mmrChangeSign = '<span style="color: green;">&#9883; +</span>';
-        } else if (mmr_change_to_last_game < 0) {
-        mmrChangeSign = '<span style="color: red;">&#9882; -</span>';
-        } else {
-        mmrChangeSign = ''; // No sign if MMR change is 0
-        }
-
-const content = `
-  ...
-  <p>Last Game RR Change: ${mmrChangeSign}${mmr_change_to_last_game}</p>
-  ...
-`;
+        const mmrChange = mmr_change_to_last_game;
+        const mmrChangeSign = mmrChange >= 0 ? '+' : '-';
 
 
 const content = `
   <p>Rank: ${currenttierpatched} (${ranking_in_tier}/100 RR)</p>
   <p>MMR: ${elo}</p>
-  <p>Last Game RR Change: ${Math.abs(mmr_change_to_last_game)}</p>
+  <p>Last Game RR Change: ${mmrChangeSign}${Math.abs(mmrChange)}</p>
   <img src="${images.large}" alt="${currenttierpatched} rank icon">
 `;
 
