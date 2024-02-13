@@ -59,6 +59,6 @@ const content = `
     })
     .catch(error => {
       console.error('Error:', error);
-      alert('An error occurred. Please check your internet connection and try again.');
+      alert('An error occurred. Please check your region and try again.');
     });
 });
