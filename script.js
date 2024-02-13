@@ -40,11 +40,11 @@ checkStatsButton.addEventListener('click', () => {
         // Build HTML content with rank, RR, MMR, and MMR change indicator
         let mmrChangeSign = '';
         if (mmr_change_to_last_game > 0) {
-         mmrChangeSign = '<span style="color: green;">&#9883; +</span>';
+        mmrChangeSign = '<span style="color: green;">&#9883; +</span>';
         } else if (mmr_change_to_last_game < 0) {
-         mmrChangeSign = '<span style="color: red;">&#9882; -</span>';
+        mmrChangeSign = '<span style="color: red;">&#9882; -</span>';
         } else {
-         mmrChangeSign = ''; // No sign if MMR change is 0
+        mmrChangeSign = ''; // No sign if MMR change is 0
         }
 
 const content = `
