@@ -3,37 +3,47 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Valtrack</title>
+  <title>ValTrack</title>
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="dark-mode">
   <button id="dark-mode-toggle">Toggle Dark Mode</button>
+  <label for="auto-region-toggle">Auto Region:</label>
+  <input type="checkbox" id="auto-region-toggle" checked>
 
   <section id="valorant-stats">
-    <h2>Welcome to ValTrack</h2>
+    <h2>Valorant Player Stats</h2>
     <div class="region-selector">
       <label for="region">Region:</label>
       <select id="region">
-        <option value="ap">AP</option>
-        <option value="br">BR</option>
         <option value="na">NA</option>
+        <option value="br">BR</option>
+        <option value="ap">AP</option>
         <option value="eu">EU</option>
         <option value="kr">KR</option>
         <option value="latam">LATAM</option>
-        
       </select>
     </div>
     <div class="username-input">
       <label for="username">Username:</label>
       <input type="text" id="username" placeholder="Enter your Valorant username">
+      <!-- New: Dropdown for previous users -->
+      <select id="suggestedUsers"></select>
     </div>
     <div class="tag-input">
       <label for="tag">Tag:</label>
       <input type="text" id="tag" placeholder="Enter your Valorant tag">
     </div>
     <button id="check-stats">Check Stats</button>
+    <button id="delete-button">Delete</button>
+    <button id="clear-history-button">Clear History</button>
+    <button id="clear-button">Clear</button>
     <div id="stats-display"></div>
   </section>
+
+  <footer>
+    Made by Vulk7n <a href="https://www.youtube.com/@vulk7n" target="_blank" rel="noopener noreferrer">https://www.youtube.com/@vulk7n</a>
+  </footer>
 
   <script src="script.js"></script>
 </body>
