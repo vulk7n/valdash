@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+  
+  <title>Rank Check - ValPulse</title>
+  <link rel="stylesheet" href="rank.css">
+</head>
+<body class="dark-mode">
+  
+  <section id="valorant-stats">
+    <h2><a href="home.html">Rank Check</a></h2>
+    <div class="username-input">
+      <label for="username">Username:</label>
+      <input type="text" id="username" placeholder="Enter your Valorant username">
+      <!-- New: Dropdown for previous users -->
+      <select id="suggestedUsers"></select>
+    </div>
+    <div class="tag-input">
+      <label for="tag">Tag:</label>
+      <input type="text" id="tag" placeholder="Enter your Valorant tag">
+    </div>
+    <!-- Add the 'small-button' class to each button -->
+<button class="button small-button" id="check-stats">
+  <div class="label">
+    <span class="hover-effect"></span>
+    <span class="label-text">Check Stats</span>
+  </div>
+</button>
+<button class="button small-button" id="clear-button">
+  <div class="label">
+    <span class="hover-effect"></span>
+    <span class="label-text">Clear</span>
+  </div>
+</button>
+<button class="button small-button" id="delete-button">
+  <div class="label">
+    <span class="hover-effect"></span>
+    <span class="label-text">Delete</span>
+  </div>
+</button>
+<button class="button small-button" id="clear-history-button">
+  <div class="label">
+    <span class="hover-effect"></span>
+    <span class="label-text">Clear History</span>
+  </div>
+</button>
+
+    <div id="stats-display"></div>
+  </section>
+
+  <footer>
+    Made by <a href="https://www.youtube.com/@vulk7n" target="_blank" rel="noopener noreferrer">Vulk7n</a>
+  </footer>
+
+  <script src="rank.js"></script>
+</body>
+</html>
