@@ -117,7 +117,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Function to search for stats using the specified region
   const searchStats = (savedUsername, tag, region) => {
-    const apiUrl = `https://api.henrikdev.xyz/valorant/v1/mmr/${region}/${savedUsername}/${tag}`;
+    const apiUrl = `https://api.henrikdev.xyz/valorant/v1/mmr/${region}/${savedUsername}/${tag}?api_key=HDEV-56826896-05f7-4a8d-82e0-b7a620c7123a`;
 
     return fetch(apiUrl)
       .then(response => {
